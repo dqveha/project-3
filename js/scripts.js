@@ -21,7 +21,7 @@ function beepBoop(number, name) {
       newArray.push(mostImportantException);
     }
     else if (string.includes(2)) {
-      let mostImportantException = string.replace(/\d+/g, ' "Boop"');
+      let mostImportantException = string.replace(/\d+/g, ' "Boop!"');
       newArray.push(mostImportantException);
     } else if (string.includes(1)) {
       let mostImportantException = string.replace(/\d+/g, ' "Beep!"');
@@ -56,7 +56,7 @@ function reverseBoopBeep(number, name) {
       );
       reverseNewArray.push(mostImportantException);
     } else if (string.includes(2)) {
-      let mostImportantException = string.replace(/\d+/g, ' "Boop"');
+      let mostImportantException = string.replace(/\d+/g, ' "Boop!"');
       reverseNewArray.push(mostImportantException);
     } else if (string.includes(1)) {
       let mostImportantException = string.replace(/\d+/g, ' "Beep!"');
@@ -75,7 +75,6 @@ $(document).ready(function () {
       const enter = $("input#number").val();
       const name = $("input#name").val();
       const mrRobogerSays = beepBoop(enter, name);
-      $(".speech-bubble").show();
       $("#reverseOutput").hide();
       $("#output").text(mrRobogerSays).fadeIn();
     });
@@ -92,3 +91,4 @@ $(document).ready(function () {
     });
   });
 });
+
