@@ -1,6 +1,7 @@
 img {
   float: left;
   height: 500px;
+  border-radius: 15%;
 }
 
 .speech-bubble {
@@ -10,7 +11,7 @@ img {
   width: auto;
   height: auto;
   text-align: center;
-  padding: 20px;
+
   position: relative;
   margin: 20px;
   display: none;
@@ -22,17 +23,18 @@ img {
 }
 
 .bottom {
-  border-color: #00f0ad transparent transparent transparent;
+  padding-left: 0px;
+  width: -20px;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 0;
+  border-right: 10px solid blue;
+  /* border-color: #00f0ad transparent transparent transparent;
   border-width: 8px 8px 0px 8px;
-  bottom: -8px;
+  bottom: -8px; */
 }
 
-.bottom:after {
-  border-color: #eae577 transparent transparent transparent;
-  border-style: solid;
-  border-width: 7px 7px 0px 7px;
-  bottom: 1px;
-  content: "";
-  position: absolute;
-  left: -7px;
+div #output {
+  margin-left: ;
 }
