@@ -2,10 +2,13 @@
 
 function beepBoop(number) {
   let inputtedNum = [];
-  if (number === 0) {
+  if (number === 1) {
+    inputtedNum.push(number-1);
     inputtedNum.push(number);
-    console.log(inputtedNum);
+  } else if (number === 0) {
+    inputtedNum.push(number);
   }
+  console.log(inputtedNum);
 };
 
 

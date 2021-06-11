@@ -3,7 +3,12 @@ Test-Driven Development
 Describe: beepBoop()
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
-Expect:(beepBoop(0).toEqual([0]);
+Expect:(beepBoop(0);
+Output: [0]
+
+Test: "It should return an array with [0, 1] if the number 1 is inputted"
+Code:beepBoop(1);
+Expected Output: [0, 1]
 
 <!-- Template
 
