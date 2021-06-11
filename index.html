@@ -11,13 +11,17 @@
   <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-  <form id="roboger">
-    <div class="form-group">
-      <label for="number">Enter a number that's not negative or a decimal!</label>
-      <input id="number" class="form-control" type="text">
-    </div>
-    <div id="output"></div>
-    <button class="btn" type="submit">submit</button>
-  </form>
+  <div class="container">
+    <form class="roboger">
+      <div class="form-group">
+        <label for="number">Enter a number that's not negative or a decimal!</label>
+        <input id="number" class="form-control" type="number" min="0">
+      </div>
+      <div id="output"></div>
+      <div id="reverseOutput"></div>
+      <button class="btn" type="submit" name="work" value="chronological">Submit</button>
+      <button class="btn" type="submit" name="work" value="reverse">Reverse it!</button>
+    </form>
+  </div>
 </body>
 </html>
