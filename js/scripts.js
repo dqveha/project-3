@@ -5,10 +5,13 @@ function beepBoop(number) {
   }
   const stringOutputNum = inputtedNum.toString();
   const stringOutNumSplit = stringOutputNum.split(",");
-  let newArray = []
-  stringOutNumSplit.forEach(function(string) {
+  let newArray = [];
+  stringOutNumSplit.forEach(function (string) {
     if (string.includes(3)) {
-      let mostImportantException = string.replace(/\d+/g, ' "Won\'t you be my neighbor?"');
+      let mostImportantException = string.replace(
+        /\d+/g,
+        ' "Won\'t you be my neighbor?"'
+      );
       newArray.push(mostImportantException);
     } else if (string.includes(2)) {
       let mostImportantException = string.replace(/\d+/g, ' "Boop"');
@@ -17,12 +20,12 @@ function beepBoop(number) {
       let mostImportantException = string.replace(/\d+/g, ' "Beep!"');
       newArray.push(mostImportantException);
     } else {
-      newArray.push(" " + "\"" + string + "\"");
+      newArray.push(" " + '"' + string + '"');
     }
   });
   console.log(newArray);
   return newArray + " . . .";
-};
+}
 
 function reverseBoopBeep(number) {
   let inputtedNum = [];
@@ -31,10 +34,13 @@ function reverseBoopBeep(number) {
   }
   const stringOutputNum = inputtedNum.toString();
   const stringOutNumSplit = stringOutputNum.split(",");
-  let reverseNewArray = []
-  stringOutNumSplit.forEach(function(string) {
+  let reverseNewArray = [];
+  stringOutNumSplit.forEach(function (string) {
     if (string.includes(3)) {
-      let mostImportantException = string.replace(/\d+/g, ' "Won\'t you be my neighbor?"');
+      let mostImportantException = string.replace(
+        /\d+/g,
+        ' "Won\'t you be my neighbor?"'
+      );
       reverseNewArray.push(mostImportantException);
     } else if (string.includes(2)) {
       let mostImportantException = string.replace(/\d+/g, ' "Boop"');
@@ -43,24 +49,25 @@ function reverseBoopBeep(number) {
       let mostImportantException = string.replace(/\d+/g, ' "Beep!"');
       reverseNewArray.push(mostImportantException);
     } else {
-      reverseNewArray.push(" " + "\"" + string + "\"");
+      reverseNewArray.push(" " + '"' + string + '"');
     }
   });
   return reverseNewArray + " . . .";
-};
+}
 
-
-$(document).ready(function() {
-  $(".roboger").submit(function() {
+$(document).ready(function () {
+  $(".roboger").submit(function () {
     event.preventDefault();
     const enter = $("input#number").val();
-    $("button#chronological").click(function() {
+    $("button#chronological").click(function () {
+      $("#reverseOutput").hide();
       const mrRobogerSays = beepBoop(enter);
-      $("#output").text(mrRobogerSays);
-  });
-  $("button#reverse").click(function() {
-    const reverseMrRoboger = reverseBoopBeep(enter);
-    $("#reverseOutput").text(reverseMrRoboger);
+      $("#output").text(mrRobogerSays).show();
+    });
+    $("button#reverse").click(function () {
+      $("#output").hide();
+      const reverseMrRoboger = reverseBoopBeep(enter);
+      $("#reverseOutput").text(reverseMrRoboger).show();
+    });
   });
 });
-
