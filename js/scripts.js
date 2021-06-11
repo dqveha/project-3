@@ -2,11 +2,8 @@
 
 function beepBoop(number) {
   let inputtedNum = [];
-  if (number === 1) {
-    inputtedNum.push(number-1);
-    inputtedNum.push(number);
-  } else if (number === 0) {
-    inputtedNum.push(number);
+  for (let i = number; i >= 0; i--) {
+    inputtedNum.unshift(i);
   }
   console.log(inputtedNum);
 };
@@ -17,6 +14,4 @@ function beepBoop(number) {
 
 // $(document).ready(function() {
 // });
-
-
 
