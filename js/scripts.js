@@ -12,7 +12,11 @@ function beepBoop(number) {
     if (string.includes(3)) {
       let mostImportantException = string.replace(/\d+/g, "Won't you be my neighbor?");
       newArray.push(mostImportantException);
-    } else {
+    } else if (string.includes(2)) {
+      let mostImportantException = string.replace(/\d+/g, "Boop");
+      newArray.push(mostImportantException);
+    } 
+    else {
       newArray.push(string);
     }
   });

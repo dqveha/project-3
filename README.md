@@ -58,6 +58,43 @@ Expected Output:
 31: "Won't you be my neighbor?"
 32: "Won't you be my neighbor?"]
 
+Test: "Replace digits containing 2 with 'Boop'."
+Code:beepBoop(32);
+Expected Output:
+[0: "0"
+1: "1"
+2: "Boop"
+3: "Won't you be my neighbor?"
+4: "4"
+5: "5"
+6: "6"
+7: "7"
+8: "8"
+9: "9"
+10: "10"
+11: "11"
+12: "Boop"
+13: "Won't you be my neighbor?"
+14: "14"
+15: "15"
+16: "16"
+17: "17"
+18: "18"
+19: "19"
+20: "Boop"
+21: "Boop"
+22: "Boop"
+23: "Won't you be my neighbor?"
+24: "Boop"
+25: "Boop"
+26: "Boop"
+27: "Boop"
+28: "Boop"
+29: "Boop"
+30: "Won't you be my neighbor?"
+31: "Won't you be my neighbor?"
+32: "Won't you be my neighbor?"]
+
 <!-- Template
 
 
