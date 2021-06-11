@@ -95,6 +95,43 @@ Expected Output:
 31: "Won't you be my neighbor?"
 32: "Won't you be my neighbor?"]
 
+Test: "Replace digits containing 1 with 'Beep!'."
+Code:beepBoop(32);
+Expected Output:
+[0: "0"
+1: "Beep!"
+2: "Boop"
+3: "Won't you be my neighbor?"
+4: "4"
+5: "5"
+6: "6"
+7: "7"
+8: "8"
+9: "9"
+10: "Beep!"
+11: "Beep!"
+12: "Boop"
+13: "Won't you be my neighbor?"
+14: "Beep!"
+15: "Beep!"
+16: "Beep!"
+17: "Beep!"
+18: "Beep!"
+19: "Beep!"
+20: "Boop"
+21: "Boop"
+22: "Boop"
+23: "Won't you be my neighbor?"
+24: "Boop"
+25: "Boop"
+26: "Boop"
+27: "Boop"
+28: "Boop"
+29: "Boop"
+30: "Won't you be my neighbor?"
+31: "Won't you be my neighbor?"
+32: "Won't you be my neighbor?"]
+
 <!-- Template
 
 
@@ -103,18 +140,6 @@ Describe:
 Test:
 Code:
 Expected Output:
-
-
-Business logic side:
-
-1) The inputted number will immediately become an array
-2) The array created will have '0' to 'inputtedNum'
-3) The array elements will list one-by-one
-4) #s containing 1 will be replaced with Beep (LEAST IMPORTANT)
-5) #s containing 2 will be replaced with Boop
-6) #s containing 3 will be replaced with "Won't you be my neighbor?" (MOST IMPORTANT)
-
-**can use regex
 
 
 -->

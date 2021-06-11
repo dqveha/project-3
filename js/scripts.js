@@ -15,8 +15,10 @@ function beepBoop(number) {
     } else if (string.includes(2)) {
       let mostImportantException = string.replace(/\d+/g, "Boop");
       newArray.push(mostImportantException);
-    } 
-    else {
+    } else if (string.includes(1)) {
+      let mostImportantException = string.replace(/\d+/g, "Beep!");
+      newArray.push(mostImportantException);
+    } else {
       newArray.push(string);
     }
   });
