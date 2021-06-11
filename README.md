@@ -17,6 +17,10 @@ Test: "It should return a string output if the number 4 is inputted"
 Code:beepBoop(4);
 Expected Output: 0,1,2,3,4
 
+Test: "Any string with 3s in it will be replaced by 'Won't you be my neighbor?'"
+Code:beepBoop(4);
+Expected Output: 0,1,2,3,4
+
 <!-- Template
 
 
