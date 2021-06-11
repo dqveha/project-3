@@ -13,6 +13,10 @@ Test: "It should return an array with [0, 1, 2, 3, 4] if the number 4 is inputte
 Code:beepBoop(4);
 Expected Output: [0, 1, 2, 3, 4]
 
+Test: "It should return a string output if the number 4 is inputted"
+Code:beepBoop(4);
+Expected Output: 0,1,2,3,4
+
 <!-- Template
 
 
@@ -33,18 +37,6 @@ Business logic side:
 6) #s containing 3 will be replaced with "Won't you be my neighbor?" (MOST IMPORTANT)
 
 **can use regex
-**must implement loop of some sort
-    **can loop with number outputted
-      ex: for (let i = number; i >= 0; i--) {
-        array.push(i)
-      }
 
-      {
-  let inputtedNum = [];
-  for (let i = number; i >= 0; i--) {
-    inputtedNum.unshift(i);
-  }
-  console.log(inputtedNum);
-};
 
 -->

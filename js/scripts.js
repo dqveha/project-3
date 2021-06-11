@@ -5,7 +5,8 @@ function beepBoop(number) {
   for (let i = number; i >= 0; i--) {
     inputtedNum.unshift(i);
   }
-  console.log(inputtedNum);
+  let stringOutputNum = inputtedNum.toString();
+  console.log(stringOutputNum);
 };
 
 
