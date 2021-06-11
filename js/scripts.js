@@ -6,8 +6,17 @@ function beepBoop(number) {
     inputtedNum.unshift(i);
   }
   let stringOutputNum = inputtedNum.toString();
-  let mostImportantException = stringOutputNum.replace(/3/g, "Won't you be my neighbor?")
-  console.log(mostImportantException);
+  let stringOutNumSplit = stringOutputNum.split(",");
+  let newArray = []
+  stringOutNumSplit.forEach(function(string) {
+    if (string.includes(3)) {
+      let mostImportantException = string.replace(/\d+/g, "Won't you be my neighbor?");
+      newArray.push(mostImportantException);
+    } else {
+      newArray.push(string);
+    }
+  });
+  console.log(newArray);
 };
 
 
