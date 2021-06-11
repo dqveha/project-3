@@ -46,20 +46,21 @@ function reverseBoopBeep(number) {
       reverseNewArray.push(" " + "\"" + string + "\"");
     }
   });
-  return newArray + " . . .";
+  return reverseNewArray + " . . .";
 };
 
 
 $(document).ready(function() {
-  $("#roboger").submit(function() {
+  $(".roboger").submit(function() {
     event.preventDefault();
     const enter = $("input#number").val();
-    const mrRobogerSays = beepBoop(enter);
+    $("button#chronological").click(function() {
+      const mrRobogerSays = beepBoop(enter);
+      $("#output").text(mrRobogerSays);
+  });
+  $("button#reverse").click(function() {
     const reverseMrRoboger = reverseBoopBeep(enter);
-    console.log(reverseMrRoboger);
-    $("#output").text(mrRobogerSays);
     $("#reverseOutput").text(reverseMrRoboger);
   });
-
 });
 
