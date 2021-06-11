@@ -86,5 +86,9 @@ $(document).ready(function () {
       $("#output").hide();
       $("#reverseOutput").text(reverseMrRoboger).fadeIn();
     });
+    $("input#reset").click(function() {
+      $("#reverseOutput").hide();
+      $("#output").hide();
+    });
   });
 });

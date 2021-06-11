@@ -12,55 +12,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>Greetings from Mr. Roboger and his Neighborhood!</h1>
-      <div class="container mt-5 mb-5"></div>
-      <form class="roboger">
-        <div class="form-group">
-          <label for="number"
-            ><em>Please</em> enter a number that's not negative or a
-            decimal!</label
-          >
-          <input id="number" class="form-control" type="number" min="0" />
+      <h1 class="pt-4">Greetings from Mr. Roboger and his Neighborhood!</h1>
+      <div class="container mt-4 mb-4"></div>
+      <div class="row">
+        <div class="col-lg-4 pt-5">
+          <img
+          src="img/robot-1214536_1920.png"
+          cite="https://pixabay.com/illustrations/robot-flower-technology-future-1214536/"
+          />
         </div>
-        <div class="form-group">
-          <label for="name"
-            >Optional: Enter your name to have Mr. Roboger greet you!</label
-          >
-          <input id="name" class="form-control" type="text" />
-        </div>
-
-        <button
-          id="chronological"
-          class="btn btn-success"
-          type="submit"
-          value="chronological"
-        >
-          Submit
-        </button>
-        <button
-          id="reverse"
-          class="btn btn-danger"
-          type="submit"
-          value="reverse"
-        >
-          Reverse it!
-        </button>
-      </form>
-      <div class="container">
-        <div class="row">
-          <div class="col-5 pt-5">
-            <img
-            src="img/robot-1214536_1920.png"
-            cite="https://pixabay.com/illustrations/robot-flower-technology-future-1214536/"
-            />
+        <div class="col-lg-4 float-right pt-4">
+          <div class="speech-bubble">
+            <div id="output"></div>
+            <div id="reverseOutput"></div>
           </div>
-          <div class="col-6 float-right">
-            <div class="speech-bubble">
-              <div class="arrow bottom right"></div>
-              <div id="output"></div>
-              <div id="reverseOutput"></div>
+        </div>
+        <div class="col-lg-4 pt-3">
+          <form class="roboger">
+            <div class="form-group">
+              <label for="number"><em>Please</em> enter a number that's not negative or a
+                decimal!</label>
+              <input id="number" class="form-control" type="number" min="0" />
             </div>
-          </div>
+            <div class="form-group pt-4">
+              <label for="name">Optional: Enter your name to have Mr. Roboger greet you!</label>
+              <input id="name" class="form-control" type="text" />
+            </div>
+            <button
+              id="chronological"
+              class="btn btn-success"
+              type="submit"
+              value="chronological">
+              Submit
+            </button>
+            <button
+              id="reverse"
+              class="btn btn-danger"
+              type="submit"
+              value="reverse">
+              Reverse it!
+            </button>
+            <input class="btn btn-primary" id="reset" type="reset" value="Reset">
+          </form>
         </div>
       </div>
     </div>
