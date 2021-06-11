@@ -6,14 +6,14 @@ function beepBoop(number, name) {
   const stringOutputNum = inputtedNum.toString();
   const stringOutNumSplit = stringOutputNum.split(",");
   let newArray = [];
-  stringOutNumSplit.forEach(function (string) {
-    if (string.includes(3) && name !== 'undefined') {
+  stringOutNumSplit.forEach(function(string) {
+    if (string.includes(3) && name !== "") {
       let mostImportantException = string.replace(
         /\d+/g,
         ' "Won\'t you be my neighbor, '
       );
       newArray.push(mostImportantException + name + '?"');
-    } else if (string.includes(3)) {
+    } else if (string.includes(3) && name === "") {
       let mostImportantException = string.replace(
         /\d+/g,
         ' "Won\'t you be my neighbor?"'
@@ -42,15 +42,15 @@ function reverseBoopBeep(number, name) {
   const stringOutputNum = inputtedNum.toString();
   const stringOutNumSplit = stringOutputNum.split(",");
   let reverseNewArray = [];
-  stringOutNumSplit.forEach(function (string) {
-    if (string.includes(3) && name !== 'undefined') {
+  stringOutNumSplit.forEach(function(string) {
+    if (string.includes(3) && name !== "") {
       let mostImportantException = string.replace(
         /\d+/g,
         ' "Won\'t you be my neighbor, '
       );
       reverseNewArray.push(mostImportantException + name + '?"');
     }
-    else if (string.includes(3)) {
+    else if (string.includes(3) && name === '') {
       let mostImportantException = string.replace(
         /\d+/g,
         ' "Won\'t you be my neighbor?"'
@@ -73,14 +73,19 @@ $(document).ready(function () {
   $(".roboger").submit(function () {
     event.preventDefault();
     $("button#chronological").click(function() {
-      let enter = $("input#number").val();
+      const enter = $("input#number").val();
       const name = $("input#name").val();
       const mrRobogerSays = beepBoop(enter, name);
+      $(".speech-bubble").show();
+      $(".speech-bubble").animate({
+        opacity: '0.75',
+        height: toggle
+      });
       $("#reverseOutput").hide();
       $("#output").text(mrRobogerSays).show();
     });
     $("button#reverse").click(function() {
-      let enter = $("input#number").val();
+      const enter = $("input#number").val();
       const name = $("input#name").val();
       const reverseMrRoboger = reverseBoopBeep(enter, name);
       $("#output").hide();
