@@ -132,6 +132,14 @@ Expected Output:
 31: "Won't you be my neighbor?"
 32: "Won't you be my neighbor?"]
 
+Test: "Add name after 'Won't you be my neighbor, [name]?'."
+Code:beepBoop(3, "Dave");
+Expected Output:
+[0: "0"
+1: "Beep!"
+2: "Boop"
+3: "Won't you be my neighbor, Dave?"]
+
 <!-- Template
 
 

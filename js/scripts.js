@@ -1,4 +1,4 @@
-function beepBoop(number) {
+function beepBoop(number, name) {
   let inputtedNum = [];
   for (let i = number; i >= 0; i--) {
     inputtedNum.unshift(i);
@@ -7,13 +7,20 @@ function beepBoop(number) {
   const stringOutNumSplit = stringOutputNum.split(",");
   let newArray = [];
   stringOutNumSplit.forEach(function (string) {
-    if (string.includes(3)) {
+    if (string.includes(3) && name !== 'undefined') {
+      let mostImportantException = string.replace(
+        /\d+/g,
+        ' "Won\'t you be my neighbor, '
+      );
+      newArray.push(mostImportantException + name + '?"');
+    } else if (string.includes(3)) {
       let mostImportantException = string.replace(
         /\d+/g,
         ' "Won\'t you be my neighbor?"'
       );
       newArray.push(mostImportantException);
-    } else if (string.includes(2)) {
+    }
+    else if (string.includes(2)) {
       let mostImportantException = string.replace(/\d+/g, ' "Boop"');
       newArray.push(mostImportantException);
     } else if (string.includes(1)) {
@@ -27,7 +34,7 @@ function beepBoop(number) {
   return newArray + " . . .";
 }
 
-function reverseBoopBeep(number) {
+function reverseBoopBeep(number, name) {
   let inputtedNum = [];
   for (let i = number; i >= 0; i--) {
     inputtedNum.push(i);
@@ -36,7 +43,14 @@ function reverseBoopBeep(number) {
   const stringOutNumSplit = stringOutputNum.split(",");
   let reverseNewArray = [];
   stringOutNumSplit.forEach(function (string) {
-    if (string.includes(3)) {
+    if (string.includes(3) && name !== 'undefined') {
+      let mostImportantException = string.replace(
+        /\d+/g,
+        ' "Won\'t you be my neighbor, '
+      );
+      reverseNewArray.push(mostImportantException + name + '?"');
+    }
+    else if (string.includes(3)) {
       let mostImportantException = string.replace(
         /\d+/g,
         ' "Won\'t you be my neighbor?"'
@@ -60,13 +74,15 @@ $(document).ready(function () {
     event.preventDefault();
     $("button#chronological").click(function() {
       let enter = $("input#number").val();
-      const mrRobogerSays = beepBoop(enter);
+      const name = $("input#name").val();
+      const mrRobogerSays = beepBoop(enter, name);
       $("#reverseOutput").hide();
       $("#output").text(mrRobogerSays).show();
     });
     $("button#reverse").click(function() {
       let enter = $("input#number").val();
-      const reverseMrRoboger = reverseBoopBeep(enter);
+      const name = $("input#name").val();
+      const reverseMrRoboger = reverseBoopBeep(enter, name);
       $("#output").hide();
       $("#reverseOutput").text(reverseMrRoboger).show();
     });
