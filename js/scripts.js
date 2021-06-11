@@ -58,15 +58,16 @@ function reverseBoopBeep(number) {
 $(document).ready(function () {
   $(".roboger").submit(function () {
     event.preventDefault();
-    const enter = $("input#number").val();
-    $("button#chronological").click(function () {
-      $("#reverseOutput").hide();
+    $("button#chronological").click(function() {
+      let enter = $("input#number").val();
       const mrRobogerSays = beepBoop(enter);
+      $("#reverseOutput").hide();
       $("#output").text(mrRobogerSays).show();
     });
-    $("button#reverse").click(function () {
-      $("#output").hide();
+    $("button#reverse").click(function() {
+      let enter = $("input#number").val();
       const reverseMrRoboger = reverseBoopBeep(enter);
+      $("#output").hide();
       $("#reverseOutput").text(reverseMrRoboger).show();
     });
   });
