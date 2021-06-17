@@ -14,7 +14,7 @@
 
 ## Description
 
-This is a web application that takes a number from the user, and returns an output under specific circumstances starting from 0 to the user's number. The exceptions are with numbers containing a '1', '2', and '3'. The '1's are replaced with "Beep!", '2's are replcaed with "Boop!, and lastly, '3's are replaced with "Won't you be my neighbor?". There is an additional input field to enter the user's name if the user wants to be greeted personaly with "Won't you be my neighbor, [user's name]?". Also, there is an option to reverse the order of the output.
+This is a web application that takes a number from the user, and returns an output under specific circumstances starting from 0 to the user's number. The exceptions are with numbers containing a '1', '2', and '3'. The '1's are replaced with 'Beep!', '2's are replaced with 'Boop!', and lastly, '3's are replaced with 'Won't you be my neighbor?'. There is an additional input field to enter the user's name if the user wants to be greeted personaly with 'Won't you be my neighbor, [user's name]?'. Also, there is an option to reverse the order of the output.
 
 The color scheme can be credited as seen [here](https://www.color-hex.com/color-palette/32660) and [here](https://github.com/Henryjean/Rogers-Cardigans/blob/master/Charts/BarChart.png). The speech bubble was drawn from [here](https://projects.verou.me/bubbly/) which can be seen on this user's github [here](https://github.com/LeaVerou/bubbly).
 

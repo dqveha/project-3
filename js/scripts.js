@@ -69,8 +69,6 @@ function reverseBoopBeep(number, name) {
 }
 
 $(document).ready(function () {
-  $(".roboger").submit(function () {
-    event.preventDefault()
     $("button#chronological").click(function() {
       const enter = $("input#number").val();
       const name = $("input#name").val();
@@ -89,6 +87,5 @@ $(document).ready(function () {
       $("#reverseOutput").hide();
       $("#output").hide();
     });
-  });
 });
 
