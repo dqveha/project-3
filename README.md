@@ -33,7 +33,7 @@ The color scheme can be credited as seen [here](https://www.color-hex.com/color-
 
 ## Known Bugs
 
-1. Upon submitting, the output does not occur until the user clicks twice on the submit button. Once the output returns, then it only requires one click thereafter when adjusting the number. As of this moment, I have found a way to debug this, but it causes another bug related to not hiding the other output appropriately. I felt this bug was a better product to show visually without an additional text showing.
+1. Currently not aware of any bugs. Please contact me if you find one!
 
 ## License
 
