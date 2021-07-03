@@ -2,7 +2,7 @@
 
 ## [https://github.com/dqveha/roboger-neighborhood](https://github.com/dqveha/roboger-neighborhood)
 
-## [https://dqveha.github.io/roboger-neighborhood/index.html/](https://dqveha.github.io/roboger-neighborhood/index.html)
+## [https://dqveha.github.io/roboger-neighborhood/](https://dqveha.github.io/roboger-neighborhood/)
 
 #### By Dave Lindqvist
 
